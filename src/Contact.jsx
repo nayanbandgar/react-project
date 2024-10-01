@@ -1,8 +1,12 @@
 function Contact() {
+
+     let heading = "contact app"
    return (
       <div>
 
-         <p className="text-4xl mt-4 ml-10  text-blue-500 text-center"><b><u>CONTACT APP</u></b></p>
+         <p className="text-4xl mt-4 ml-10  text-blue-500 text-center"><b><u>
+            {heading}
+            </u></b></p>
 
          <section className="flex justify-center">
 
