@@ -1,6 +1,44 @@
 function Contact() {
 
      let heading = "contact app"
+     let listofcontact = [
+      {
+         name:"nayan",
+         Number:9009388091,
+      },
+
+
+
+      {
+         name:"newnumber",
+         Number:9009059655,
+      },
+
+
+
+
+      {
+         name:"papa",
+         Number:7999022168,
+      },
+
+
+
+
+
+      {
+         name:"darpan",
+         Number:9111946697,
+      },
+
+
+
+      {
+         name:"sys",
+         Number:7666589990,
+      },
+
+     ]
    return (
       <div>
 
@@ -24,42 +62,16 @@ function Contact() {
 
 
 
-                  <li className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
+                 {
+                  listofcontact.map(c=> <li key={c.Number} className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
 
-                     <p className="ml-5 text-sm">Nayan  </p>
-                     <p className="ml-5 text-xl">9009388091</p>
+                     <p className="ml-5 text-sm">{c.name}  </p>
+                     <p className="ml-5 text-xl">{c.Number}</p>
 
-                  </li>
-
-
-
-                  <li className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
-
-                     <p className="ml-5 text-sm">Nayan  </p>
-                     <p className="ml-5 text-xl">9009388091</p>
-
-                    
-
-                  </li>
+                  </li>)
+                 }
 
 
-
-
-                  <li className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
-
-                     <p className="ml-5 text-sm">Nayan  </p>
-                     <p className="ml-5 text-xl">9009388091</p>
-
-                  </li>
-
-
-
-                  <li className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
-
-                     <p className="ml-5 text-sm">Nayan  </p>
-                     <p className="ml-5 text-xl">9009388091</p>
-
-                  </li>
                </ul>
 
 
