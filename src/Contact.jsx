@@ -5,6 +5,8 @@ function Contact() {
       {
          name:"nayan",
          Number:9009388091,
+         imageurl:"https://tinyjpg.com/images/social/website.jpg",
+        
       },
 
 
@@ -12,6 +14,8 @@ function Contact() {
       {
          name:"newnumber",
          Number:9009059655,
+         imageurl:"https://tinyjpg.com/images/social/website.jpg",
+
       },
 
 
@@ -20,6 +24,7 @@ function Contact() {
       {
          name:"papa",
          Number:7999022168,
+         imageurl:"https://tinyjpg.com/images/social/website.jpg",
       },
 
 
@@ -29,18 +34,21 @@ function Contact() {
       {
          name:"darpan",
          Number:9111946697,
-      },
+         imageurl:"https://tinyjpg.com/images/social/website.jpg",
 
+      },
 
 
       {
          name:"sys",
          Number:7666589990,
-      },
+         imageurl:"https://tinyjpg.com/images/social/website.jpg",
+
+      }
 
      ]
    return (
-      <div>
+      <>
 
          <p className="text-4xl mt-4 ml-10  text-blue-500 text-center"><b><u>
             {heading}
@@ -65,8 +73,24 @@ function Contact() {
                  {
                   listofcontact.map(c=> <li key={c.Number} className="bg-gray-50 rounded-lg p-1 w-[380px] ml-12 mt-3">
 
-                     <p className="ml-5 text-sm">{c.name}  </p>
-                     <p className="ml-5 text-xl">{c.Number}</p>
+           <div className="flex">
+
+
+                   <div>
+                           <img className="h-11 w-11 rounded-2xl m-3" src={c.imageurl} alt="" />
+                  </div>
+                  <div> 
+                         <p className="ml-5 text-sm">{c.name}  </p>
+                          <p className="ml-5 text-xl">{c.Number}</p>
+                   </div>
+
+
+
+
+          </div>
+
+
+
 
                   </li>)
                  }
@@ -101,7 +125,7 @@ function Contact() {
 
 
          </section>
-      </div>
+      </>
    )
 }
 export default Contact
